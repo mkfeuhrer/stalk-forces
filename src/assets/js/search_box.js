@@ -15,6 +15,16 @@ $(document).ready(function () {
     }
   });
   $(".go-icon").click(function () {
-    $(".search-form").submit();
+    search()
   });
 });
+
+function search() {
+  console.log("In search function")
+  let user = this.username;
+  if (user) {
+    this.$router.push("/" + user);
+  } else {
+    this.showError = true;
+  }
+}

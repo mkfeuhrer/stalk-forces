@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="foot">
     <!-- Don't judge me over some inline - thats just lazy me! -->
     <footer>
       Built with
@@ -20,12 +20,10 @@ export default {
 
 <style>
 footer {
-  position: fixed;
   height: auto;
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 20px;
   z-index: -1;
   background: #ffffff;
 }
@@ -43,7 +41,6 @@ a:after {
   display: block;
   height: 2px;
   left: 50%;
-  position: absolute;
   background: rgb(0, 0, 0);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
@@ -51,5 +48,12 @@ a:after {
 a:hover:after {
   width: 100%;
   left: 0;
+}
+
+.foot {
+  color: #777777;
+  font-size: 2.5vh;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 </style>
