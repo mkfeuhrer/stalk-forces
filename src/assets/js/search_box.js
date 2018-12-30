@@ -22,6 +22,7 @@ $(document).ready(function () {
 function search() {
   console.log("In search function")
   let user = this.username;
+  console.log(user)
   if (user) {
     this.$router.push("/" + user);
   } else {

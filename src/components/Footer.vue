@@ -1,5 +1,5 @@
 <template>
-  <div class="foot">
+  <div class="`foot`">
     <!-- Don't judge me over some inline - thats just lazy me! -->
     <footer>
       Built with
@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 footer {
   height: auto;
   width: 100%;
